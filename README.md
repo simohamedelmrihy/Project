@@ -8,8 +8,18 @@
 L'objectif de notre application est de fournir à l'utilisateur un outil pour visualiser les informations concernant des routes (accidents, gravité, l'embouteillage …) ces informations permettront à ce dernier de bien choisir son chemin à l’avance ainsi pour éviter les routes qui présentent le plus d’accidents. L’application est aussi utilisée par un administrateur qui, son rôle, consiste à gérer l’application et de la mettre à jour (ex : les opérations CRUD pour les accidents).
 
 # Instalation
-  Pour démarrer l’application on aura besoin d'installer les élements suivants :
-  -
+  - Pour démarrer l’application on doit installer des éléments suivants :
+    1) NodeJS
+    2) MongoDb
+    
+  ## Server:
+    1) il faut se positionner dans le dossier ServerSide.
+    2) installer les packages NodeJs en utilisant la commande: npm install
+    3) démarrer la base de données en utilisant la commande: mongod --dbpath ./data (le dossier data est dans le dossier ServerSide)
+    4) enfin il faut démarrer l'application en utilisant la commande: npm start
+  ## Client:
+    puisque nous avons travailler avec la version 1.6.7 du Framework AngularJs il suffit d'ouvrir la page html index.html qui se trouve dans le dossier ClientSide dans un navigateur.
+  
   
 # Les fonctionnalités de l’applications 
 I-Pour un utilisateur simple: 
