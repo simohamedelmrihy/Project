@@ -1,8 +1,8 @@
 # Membres
-  -Mohamed EL MRIHY
-  -Anass El Bouayadi
-  -Hamza LAHBABI
-  -Amine Rachid
+  -Mohamed EL MRIHY   
+  -Anass El Bouayadi   
+  -Hamza LAHBABI   
+  -Amine Rachid   
 
 # Description
 L'objectif de notre application est de fournir à l'utilisateur un outil pour visualiser les informations concernant des routes (accidents, gravité, l'embouteillage …) ces informations permettront à ce dernier de bien choisir son chemin à l’avance ainsi pour éviter les routes qui présentent le plus d’accidents. L’application est aussi utilisée par un administrateur qui, son rôle, consiste à gérer l’application et de la mettre à jour (ex : les opérations CRUD pour les accidents).
@@ -40,6 +40,6 @@ II-Pour l'administrateur:
     >> mocha leNomDuFichier
  
   il y a trois fichiers de tests qui sont les suivants :
-    1- commentairesTest.js
-    2- accidentsTest.js
-    3- usersTest.js
+    1- commentairesTest.js   
+    2- accidentsTest.js   
+    3- usersTest.js   
