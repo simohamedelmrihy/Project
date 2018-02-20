@@ -1,0 +1,104 @@
+<!-- sidebar -->
+<div class="sidebar app-aside" id="sidebar" style="margin-top: 0px">
+  <div class="sidebar-container perfect-scrollbar">
+    <nav>
+      <!-- start: SEARCH FORM -->
+      <!-- start: MAIN NAVIGATION MENU -->
+      <div class="navbar-title">
+        <span>Main Navigation</span>
+      </div>
+      <ul class="main-navigation-menu">
+        <li class="active open">
+          <a ui-sref=".accidents">
+            <div class="item-content">
+              <div class="item-media">
+                <i class="ti-home"></i>
+              </div>
+              <div class="item-inner">
+                <span class="title"> Accidents </span>
+              </div>
+            </div>
+          </a>
+        </li>
+        
+        <!-- <li>
+          <a ui-sref=".comments">
+            <div class="item-content">
+              <div class="item-media">
+                <i class="ti-comments"></i>
+              </div>
+              <div class="item-inner">
+                <span class="title"> Commentaires </span>
+              </div>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a ui-sref=".users">
+            <div class="item-content">
+              <div class="item-media">
+                <i class="ti-user"></i>
+              </div>
+              <div class="item-inner">
+                <span class="title"> Utilisateurs </span>
+              </div>
+            </div>
+          </a>
+        </li> -->
+      </ul>
+    </nav>
+  </div>
+</div>
+<div class="app-content">
+  <header class="navbar navbar-default navbar-static-top">
+    <div class="navbar-header">
+      <a href="#" class="sidebar-mobile-toggler pull-left hidden-md hidden-lg" data-toggle-class="app-slide-off" data-toggle-target="#app"
+        data-toggle-click-outside="#sidebar">
+        <i class="ti-align-justify"></i>
+      </a>
+      <a class="navbar-brand" href="#">
+        <img src="assets/images/logo.png" alt="Client Side">
+      </a>
+      <a href="#" class="sidebar-toggler pull-right visible-md visible-lg" data-toggle-class="app-sidebar-closed" data-toggle-target="#app">
+        <img src="images/map1.png" alt="Clip-Two" style="width: 40px">
+      </a>
+      <a class="pull-right menu-toggler visible-xs-block" id="menu-toggler" data-toggle="collapse" href=".html">
+        <span class="sr-only">Toggle navigation</span>
+        <i class="ti-view-grid"></i>
+      </a>
+    </div>
+    <div class="navbar-collapse collapse">
+
+      <ul class="nav navbar-right">
+        <li class="dropdown">
+          <a ui-sref=".direction" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+            <i class="fa fa-map-marker"></i> direction
+          </a>
+        </li>
+
+        <li class="dropdown">
+          <a ui-sref=".zone" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+            <i class="fa fa-street-view"></i> Zone
+          </a>
+        </li>
+
+        <li class="dropdown">
+          <a href="" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" ng-click="deconnecter()">
+            <i class="fa fa-sign-out"></i> Se déconnecter
+          </a>
+        </li>
+
+        <li class="dropdown current-user">
+          <a href="" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+            <img src="images/profil.png" alt="Peter">
+            <span class="username">Admin</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <div class="main-content">
+    <div ui-view></div>
+  </div>
+</div>

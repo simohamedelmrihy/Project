@@ -1,0 +1,55 @@
+<div style="margin-top: 80px">
+  <div class="container" style="margin-bottom: 15px">
+    <div class="row">
+      <div class="col-md-1">
+      </div>
+      <div class="col-md-4">
+        <input type="text" places-auto-complete types="address" component-restrictions="{country:'fr'}" class="form-control" placeholder="Adresse" ng-model="circle" />
+      </div>
+      <div class="col-md-1">
+        <center>
+          <i class="fa fa-arrow-right" aria-hidden="true" style="font-size: 25px; padding-top: 5px"></i>
+        </center>
+      </div>
+      <div class="col-md-4">
+        <input type="text" class="form-control" placeholder="Distance en mètres" ng-model="distance"/>
+      </div>
+      <div class="col-md-2">
+        <button type="submit" class="btn btn-primary pull-left" ng-click="getCircle()">
+          rechercher
+          <i class="fa fa-arrow-circle-right"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+  <ng-map zoom="14" id="my-map" center="{{centre}}" zoom-to-include-markers="auto" style="height:500px">
+      <shape name="circle" ng-if="showCircle" 
+      stroke-color="#FF0000"
+      stroke-opacity="0.8"
+      stroke-weight="2"
+      fill-color="#FF0000"
+      fill-opacity="0.35"
+      center="{{centre}}"
+      radius="{{distance1}}">
+    </shape>
+    <marker id='{{mark._id}}' icon="{
+        url:'images/car1.png',
+        scaledSize:[50,60]}" 
+        ng-repeat="mark in markers1" 
+        position="[{{mark.cordonnees.lat}}, {{mark.cordonnees.lng}}]" 
+        on-click="showDetail1(mark)"></marker>
+    <info-window id="foo-iww">
+      <div ng-non-bindable="">
+        <div> gravité: {{mark2.indiceGravite}} </div>
+        <br/>
+        <button type="submit" class="btn btn-primary pull-left" ng-click="getDetails1()">
+          Voir détails
+          <i class="fa fa-info-circle"></i>
+        </button>
+      </div>
+    </info-window>
+  </ng-map>
+  <div ng-repeat="mark1 in markers1">{{mark1._id}}</div>
+  <div> {{mark2}} </div>
+</div>
+{{distance1}}

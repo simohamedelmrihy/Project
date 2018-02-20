@@ -1,0 +1,110 @@
+<div class="container-fluid container-fullw">
+  <div class="row">
+    <div class="col-md-12">
+      <h2>Ajouter un nouveau accident</h2>
+      <hr>
+      <form id="form2">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label class="control-label">
+                Numéro d'accident
+                <span class="symbol required"></span>
+              </label>
+              <input type="text" placeholder="Entrer le numéro d'accident" class="form-control" id="firstname2" name="numAccident" ng-model="numAccident1">
+            </div>
+            <div class="form-group">
+              <label class="control-label">
+                Code Insee
+                <span class="symbol required"></span>
+              </label>
+              <input type="text" placeholder="Entrer le code Insee" class="form-control" id="lastname2" name="codeInsee" ng-model="codeInsee1">
+            </div>
+            <div class="form-group">
+              <label class="control-label">
+                Addresse
+                <span class="symbol required"></span>
+              </label>
+              <input type="text" placeholder="Entrer l'adresse" places-auto-complete component-restrictions="{country:'fr'}" class="form-control" id="email2" name="adresse" ng-model="adresse1">
+            </div>
+            <div class="form-group">
+              <label class="control-label">
+                Département
+                <span class="symbol required"></span>
+              </label>
+              <input type="text" class="form-control" placeholder="Entrer le département" name="departement" ng-model="departement1">
+            </div>
+            <div class="form-group">
+                <label class="control-label">
+                  Situation de l'accident
+                  <span class="symbol required"></span>
+                </label>
+                <input type="text" class="form-control" placeholder="Entrer la situation de l'accident" name="situation1" ng-model="situation1">
+            </div>
+            <div class="form-group">
+                <label class="control-label">
+                  Régime
+                  <span class="symbol required"></span>
+                </label>
+                <input type="text" class="form-control" placeholder="Entrer Régime" name="situation1" ng-model="regime1">
+            </div>
+          </div>
+          <div class="col-md-6">
+              <div class="form-group">
+                  <label class="control-label">
+                    Indice de Gravité
+                    <span class="symbol required"></span>
+                  </label>
+                  <input type="text" class="form-control" placeholder="Entrer l'indice de gravité" name="indiceGravite1" ng-model="indiceGravite1">
+              </div>
+              <div class="form-group">
+                  <label class="control-label">
+                    Nombre de Décés
+                    <span class="symbol required"></span>
+                  </label>
+                  <input type="number" class="form-control" placeholder="Entrer le nombre de Décés" name="nbreDeces1" ng-model="nbreDeces1">
+              </div>
+              <div class="form-group">
+                  <label class="control-label">
+                    Nombre de personne hospitalisées
+                    <span class="symbol required"></span>
+                  </label>
+                  <input type="number" class="form-control" placeholder="Entrer le nombre de personne hospitalisées" name="nbreHosspitalise1" ng-model="nbreHosspitalise1">
+              </div>
+              <div class="form-group">
+                  <label class="control-label">
+                    Nombre de blessés légers
+                    <span class="symbol required"></span>
+                  </label>
+                  <input type="number" class="form-control" placeholder="Entrer le nombre de blessés légers" name="nbreBlesseleger1" ng-model="nbreBlesseleger1">
+              </div>
+              <div class="form-group">
+                  <label class="control-label">
+                    Conditions de la lumière
+                    <span class="symbol required"></span>
+                  </label>
+                  <input type="text" class="form-control" placeholder="Entrer les conditions de la lumière" name="lumiere1" ng-model="lumiere1">
+              </div>
+              <div class="form-group">
+                  <label class="control-label">
+                    Catégorie de la route
+                    <span class="symbol required"></span>
+                  </label>
+                  <input type="text" class="form-control" placeholder="Entrer la catégorie de la route" ng-model="catRoute1">
+              </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-8">
+          </div>
+          <div class="col-md-4">
+            <button class="btn btn-primary btn-wide pull-right" ng-click="enregistrerAcc()">
+              Register
+              <i class="fa fa-arrow-circle-right"></i>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

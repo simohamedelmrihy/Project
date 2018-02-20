@@ -1,0 +1,122 @@
+<div class="container" style="padding-top: 80px; background-color: #ffffff">
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <table class="table table-striped table-bordered table-hover table-full-width" id="sample_1">
+        <thead>
+          <tr>
+            <th>Caractéristique</th>
+            <th>valeur</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Numéro d'accident</td>
+            <td>{{accident.numAccident}}</td>
+          </tr>
+
+          <tr>
+            <td>Adresse</td>
+            <td>{{accident.addresse}}</td>
+          </tr>
+
+          <tr>
+            <td>Code Insee</td>
+            <td>{{accident.codeInsee}}</td>
+          </tr>
+
+          <tr>
+            <td>Département</td>
+            <td>{{accident.departement}}</td>
+          </tr>
+
+          <tr>
+            <td>Lumière</td>
+            <td>{{accident.lumiere}}</td>
+          </tr>
+
+          <tr>
+            <td>Situation</td>
+            <td>{{accident.situation}}</td>
+          </tr>
+
+          <tr>
+            <td>Régime de la circulation</td>
+            <td>{{accident.regime}}</td>
+          </tr>
+
+          <tr>
+            <td>Catégorie de la route</td>
+            <td>{{accident.catRoute}}</td>
+          </tr>
+
+          <tr>
+            <td>Nombre de personnes bléssées </td>
+            <td>{{accident.nbreBlesseleger}}</td>
+          </tr>
+
+          <tr>
+            <td>Nombre de personnes hospitalisées </td>
+            <td>{{accident.nbreHosspitalise}}</td>
+          </tr>
+
+          <tr>
+            <td>Nombre de Décés </td>
+            <td>{{accident.nbreDeces}}</td>
+          </tr>
+
+          <tr>
+            <td>Indice de Gravité </td>
+            <td>{{accident.indiceGravite}}</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+  <!-- ----------------------------------commentaiiiiiiiires------------------------------- -->
+  <div class="row" ng-repeat='commentaire in comments'>
+    <div class="col-md-2"></div>    
+    <div class="col-md-8">
+      <ul class="media-list">
+        <li class="media">
+          <a class="pull-left" href="#">
+            <img class="media-object img-circle" style="width: 50px" src="images/profil.png" alt="profile">
+          </a>
+          <div class="media-body" style="width: 100%">
+            <div class="well well-lg">
+              <h4 class="media-heading text-uppercase reviews">{{commentaire.user.nom}} </h4>
+              <p class="media-comment">
+                {{commentaire.message}}
+              </p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+    <div class="panel panel-white">
+      <div class="panel-heading">
+        <div class="panel-title">
+          Ajouter votre commentaires
+        </div>
+      </div>
+      <div class="panel-body">
+        <div class="form-group">
+          <textarea maxlength="50" id="form-field-23" ng-model="message" class="form-control limited" style="width: 100%; height: 100px;"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary pull-left" ng-click="addCommentaire(accident._id)">
+          Envoyer
+        </button>
+      </div>
+    </div>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+</div>
